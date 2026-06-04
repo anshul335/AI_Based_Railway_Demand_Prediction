@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="border-bottom py-3">
@@ -39,9 +41,9 @@ function Navbar() {
           {/* Right Section */}
           <div className="d-flex align-items-center">
 
-            <button className="btn me-3">
+            <Link to="/login" className="btn me-3">
               Login
-            </button>
+            </Link>
 
             <button className="btn btn-dark px-4 py-2">
               Get Started
